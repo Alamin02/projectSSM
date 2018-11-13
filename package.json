@@ -1,0 +1,20 @@
+{
+  "name": "sealvl",
+  "version": "1.0.0",
+  "description": "sea level and salinity monitoring system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.6",
+    "path": "^0.12.7",
+    "socket.io": "*"
+  }
+}

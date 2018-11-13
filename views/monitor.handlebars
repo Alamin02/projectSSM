@@ -1,0 +1,25 @@
+<div style="height: 70px"></div>
+
+<div class="container-fluid" style="text-align: center">
+  <h1 id="level">0 in 0 cm</h1>      
+  <p id="tnd">Not updated yet...</p>           
+</div>
+
+    <script type="text/javascript">
+      $(function(){
+      var socket = io.connect();
+      var $level = $('#level');
+      var selector = '.nav li';
+      $(selector).removeClass('active');
+      $('#monitor').addClass('active');
+  
+      socket.on('sent new', function(data){
+        $level.empty();
+		    $level.append('<h1>' + data.msg[0] +' In ' + '</h1>');
+
+        document.getElementById("tnd").innerHTML = Date();
+		    console.log("recieved request");
+	   });
+    });
+
+</script>
